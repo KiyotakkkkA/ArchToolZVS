@@ -73,7 +73,7 @@ function tokenClassName(type: HighlightTokenType): string {
         case "string":
             return "text-amber-300";
         case "keyword":
-            return "text-sky-300";
+            return "text-indigo-300";
         default:
             return "text-(--color-foreground)";
     }
@@ -125,7 +125,7 @@ export function C4CodeEditor({
                     highlightRef.current.scrollLeft =
                         event.currentTarget.scrollLeft;
                 }}
-                className="relative z-10 h-full min-h-24 w-full resize-y bg-transparent px-3 py-3 font-mono text-sm leading-relaxed text-transparent caret-(--color-foreground) outline-none transition-all duration-200 selection:bg-sky-500/25"
+                className="relative z-10 h-full min-h-24 w-full resize-y bg-transparent px-3 py-3 font-mono text-sm leading-relaxed text-transparent caret-(--color-foreground) outline-none transition-all duration-200 selection:bg-indigo-500/25"
             />
         </div>
     );

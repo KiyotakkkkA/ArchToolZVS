@@ -153,7 +153,7 @@ export function Dropdown({
                 role="listbox"
                 tabIndex={-1}
                 style={menuStyle}
-                className={`absolute left-0 top-full z-30 mt-2 origin-top rounded-xl border border-(--color-border) bg-(--color-background-elevated) p-1 shadow-(--color-panel-shadow) transition-all duration-180 ${open ? "pointer-events-auto translate-y-0 scale-100 opacity-100" : "pointer-events-none -translate-y-1 scale-98 opacity-0"} ${menuClassName}`}
+                className={`absolute left-0 top-full z-30 mt-2 origin-top rounded-lg border border-(--color-border) bg-(--color-background-elevated) p-1 shadow-(--color-panel-shadow) transition-all duration-180 ${open ? "pointer-events-auto translate-y-0 scale-100 opacity-100" : "pointer-events-none -translate-y-1 scale-98 opacity-0"} ${menuClassName}`}
             >
                 <div className="rounded-lg space-y-2 overflow-x-hidden">
                     {searchable ? (
@@ -182,7 +182,7 @@ export function Dropdown({
                                     role="option"
                                     aria-selected={active}
                                     onClick={() => onSelect(option.value)}
-                                    className={`w-full min-w-0 justify-between rounded-lg px-3 text-left text-sm ${active ? "bg-sky-500/18 text-sky-400 hover:bg-sky-500/22 hover:text-sky-300" : ""} ${optionClassName}`}
+                                    className={`w-full min-w-0 justify-between rounded-lg px-3 text-left text-sm ${active ? "bg-indigo-500/18 text-indigo-400 hover:bg-indigo-500/22 hover:text-indigo-300" : ""} ${optionClassName}`}
                                 >
                                     <span className="min-w-0 truncate">
                                         {option.label}

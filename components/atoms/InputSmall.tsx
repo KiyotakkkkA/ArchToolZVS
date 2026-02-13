@@ -9,7 +9,7 @@ export const InputSmall = forwardRef<HTMLInputElement, InputSmallProps>(
         return (
             <input
                 ref={ref}
-                className={`h-9 w-full rounded-lg border border-(--color-border) bg-(--color-background-elevated) px-3 text-sm text-(--color-foreground) outline-none transition-all duration-200 placeholder:text-(--color-foreground-dim) focus-visible:border-sky-500/70 focus-visible:ring-2 focus-visible:ring-sky-500/25 ${className}`}
+                className={`h-9 w-full rounded-lg border border-(--color-border) bg-(--color-background-elevated) px-3 text-sm text-(--color-foreground) outline-none transition-all duration-200 placeholder:text-(--color-foreground-dim) focus-visible:border-indigo-500/70 focus-visible:ring-2 focus-visible:ring-indigo-500/25 ${className}`}
                 {...props}
             />
         );

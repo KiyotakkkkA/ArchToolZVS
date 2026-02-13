@@ -27,7 +27,7 @@ export function Accordion({
 
     return (
         <div
-            className={`rounded-xl border border-(--color-border) ${className}`}
+            className={`rounded-lg border border-(--color-border) ${className}`}
         >
             <Button
                 variant="ghost"

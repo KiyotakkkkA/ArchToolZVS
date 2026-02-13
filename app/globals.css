@@ -16,17 +16,29 @@
 }
 
 :root[data-theme="dark"] {
-    --color-background: #12120f;
-    --color-background-elevated: #1a1b17;
-    --color-surface-1: rgba(255, 255, 255, 0.07);
+    /* Основной фон — не чистый чёрный, а тёплый/нейтральный тёмно-серый */
+    --color-background: #0f0f0f; /* или #121212 для чуть более светлого фона */
+
+    /* Поверхности (карточки, панели) — чуть светлее фона */
+    --color-background-elevated: #1a1a1a;
+    --color-surface-1: rgba(255, 255, 255, 0.06);
     --color-surface-2: rgba(255, 255, 255, 0.09);
-    --color-surface-hover: rgba(140, 154, 178, 0.2);
-    --color-foreground: #f8fafc;
-    --color-foreground-muted: rgba(248, 250, 252, 0.82);
-    --color-foreground-dim: rgba(226, 232, 240, 0.62);
-    --color-border: rgba(203, 213, 225, 0.16);
-    --color-border-strong: rgba(203, 213, 225, 0.28);
-    --color-panel-shadow: 0 26px 56px -30px rgba(0, 0, 0, 0.8);
+
+    /* Эффект наведения — мягкий, без резких переходов */
+    --color-surface-hover: rgba(255, 255, 255, 0.08);
+
+    /* Основной текст — не чисто белый, чтобы снизить утомляемость */
+    --color-foreground: #e6e6e6; /* или #f0f0f0 для чуть ярче */
+    --color-foreground-muted: rgba(230, 230, 230, 0.7);
+    --color-foreground-dim: rgba(200, 200, 200, 0.55);
+
+    /* Границы — едва заметные, но читаемые */
+    --color-border: rgba(255, 255, 255, 0.12);
+    --color-border-strong: rgba(255, 255, 255, 0.2);
+
+    /* Тень — глубокая, но не "грязная" */
+    --color-panel-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+
     color-scheme: dark;
 }
 

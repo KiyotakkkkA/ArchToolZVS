@@ -5,7 +5,6 @@ import Icon from "@mdi/react";
 import { mdiMenu } from "@mdi/js";
 
 import { Button } from "@/components/atoms/Button";
-import { Panel } from "@/components/atoms/Panel";
 import { SlidedPanel } from "@/components/atoms/SlidedPanel";
 import { TopNav } from "@/components/molecules/TopNav";
 import { ThemeToggle } from "@/components/molecules/ThemeToggle";
@@ -15,19 +14,19 @@ export function AppHeader() {
 
     return (
         <>
-            <header className="sticky top-0 z-40 border-b border-(--color-border) bg-[color-mix(in_oklab,var(--color-background-elevated)_72%,transparent)] backdrop-blur-xl">
+            <header className="sticky top-0 z-40">
                 <div className="mx-auto flex w-full max-w-375 items-center justify-between gap-3 px-4 py-2 md:px-6 md:py-3">
                     <div className="flex min-w-0 items-center gap-3">
-                        <div className="grid h-10 w-10 place-items-center rounded-xl border border-(--color-border) bg-(--color-surface-2) text-sm font-bold text-sky-500">
+                        <div className="grid h-10 w-10 place-items-center rounded-lg border border-(--color-border) bg-(--color-surface-2) text-sm font-bold text-indigo-500">
                             AT
                         </div>
                         <div className="min-w-0">
-                            <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-sky-600/90">
+                            <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-indigo-600/90">
                                 Arch Tools
                             </p>
                             <h1 className="truncate text-sm font-semibold text-(--color-foreground) md:text-base flex gap-2">
                                 <span>Доверьте</span>
-                                <span className="text-sky-300/90">НАМ</span>
+                                <span className="text-indigo-300/90">НАМ</span>
                                 <span>вашу архитектуру</span>
                             </h1>
                         </div>
@@ -52,7 +51,7 @@ export function AppHeader() {
                 outsideClickClosing
                 title={
                     <div>
-                        <p className="text-xs font-semibold uppercase tracking-[0.16em] text-sky-500/85">
+                        <p className="text-xs font-semibold uppercase tracking-[0.16em] text-indigo-500/85">
                             Меню
                         </p>
                         <p className="text-sm font-semibold text-(--color-foreground)">
@@ -62,7 +61,7 @@ export function AppHeader() {
                 }
             >
                 <div className="space-y-4">
-                    <Panel className="flex items-center justify-between gap-3">
+                    <div className="flex items-center justify-between gap-3">
                         <div>
                             <p className="text-xs font-semibold uppercase tracking-[0.14em] text-(--color-foreground-muted)">
                                 Тема
@@ -72,8 +71,8 @@ export function AppHeader() {
                             </p>
                         </div>
                         <ThemeToggle />
-                    </Panel>
-                    <Panel className="space-y-3">
+                    </div>
+                    <div className="space-y-3">
                         <p className="text-xs font-semibold uppercase tracking-[0.14em] text-(--color-foreground-muted)">
                             Навигация
                         </p>
@@ -81,7 +80,7 @@ export function AppHeader() {
                             orientation="vertical"
                             onNavigate={() => setMenuOpen(false)}
                         />
-                    </Panel>
+                    </div>
                 </div>
             </SlidedPanel>
         </>

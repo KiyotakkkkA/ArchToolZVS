@@ -36,12 +36,12 @@ export function TopNav({
                         key={item.href}
                         href={item.href}
                         onClick={onNavigate}
-                        className={`rounded-xl text-sm font-medium transition-all duration-200 ease-out hover:-translate-y-px ${
+                        className={`rounded-r-lg text-sm font-medium transition-all duration-200 ease-out hover:-translate-y-px ${
                             vertical ? "px-4 py-2.5" : "px-3 py-2"
                         } ${
                             active
-                                ? "border border-sky-500/35 bg-sky-500/14 text-sky-500"
-                                : "border border-transparent text-(--color-foreground-muted) hover:border-(--color-border) hover:bg-(--color-surface-hover) hover:text-(--color-foreground)"
+                                ? "border-l-2 border-indigo-500/35 bg-indigo-500/14 text-indigo-500"
+                                : "text-(--color-foreground-muted) hover:bg-(--color-surface-hover) hover:text-(--color-foreground)"
                         } ${
                             vertical
                                 ? "inline-flex w-full items-center justify-between"
@@ -49,16 +49,6 @@ export function TopNav({
                         }`}
                     >
                         <span>{item.label}</span>
-                        {vertical ? (
-                            <span
-                                className={`h-2 w-2 rounded-full transition-colors ${
-                                    active
-                                        ? "bg-sky-400"
-                                        : "bg-(--color-border-strong)"
-                                }`}
-                                aria-hidden
-                            />
-                        ) : null}
                     </Link>
                 );
             })}

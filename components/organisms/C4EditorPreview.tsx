@@ -377,12 +377,7 @@ export function C4EditorPreview() {
             </Panel>
 
             <Panel className="relative min-h-[76vh] overflow-hidden p-0">
-                <div className="flex items-center justify-between border-b border-(--color-border) px-4 py-3">
-                    <div>
-                        <h3 className="text-base font-semibold text-(--color-foreground)">
-                            Превью диаграммы
-                        </h3>
-                    </div>
+                <div className="flex items-center justify-end border-b border-(--color-border) px-4 py-3">
                     <div className="flex items-center gap-2 text-xs">
                         <span className="rounded-lg border border-(--color-border) bg-(--color-surface-2) px-2 py-1">
                             {Math.round(scale * 100)}%

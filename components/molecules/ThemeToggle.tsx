@@ -42,10 +42,10 @@ export function ThemeToggle() {
             aria-label="Переключить тему"
             title="Сменить тему"
             size="icon"
-            variant="outline"
+            variant="ghost"
             className={
                 theme === "dark"
-                    ? "border-sky-500/60 bg-sky-500/15 text-sky-300 hover:border-sky-500/70 hover:bg-sky-500/22"
+                    ? " bg-indigo-500/15 text-indigo-300 hover:bg-indigo-500/22"
                     : ""
             }
         >

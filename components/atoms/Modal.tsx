@@ -60,7 +60,7 @@ export function Modal({
             role="dialog"
         >
             <div
-                className={`w-full max-w-5xl rounded-2xl border border-(--color-border) bg-(--color-background-elevated) shadow-(--color-panel-shadow) animate-in zoom-in-95 slide-in-from-bottom-2 duration-220 ${className}`}
+                className={`w-full max-w-5xl rounded-lg border border-(--color-border) bg-(--color-background-elevated) shadow-(--color-panel-shadow) animate-in zoom-in-95 slide-in-from-bottom-2 duration-220 ${className}`}
             >
                 <div className="flex items-center justify-between border-b border-(--color-border) px-4 py-3">
                     <h3 className="text-base font-semibold text-(--color-foreground)">
@@ -77,7 +77,7 @@ export function Modal({
                     </Button>
                 </div>
 
-                <div className="max-h-[70vh] overflow-y-auto overflow-x-hidden px-4 py-4">
+                <div className="max-h-[90vh] overflow-y-auto overflow-x-hidden px-4 py-4">
                     {children}
                 </div>
 

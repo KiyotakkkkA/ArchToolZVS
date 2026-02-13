@@ -17,7 +17,7 @@ const sizeClasses: Record<ButtonSize, string> = {
 };
 
 const variantClasses: Record<ButtonVariant, string> = {
-    solid: "border border-transparent bg-sky-600 text-white shadow-[0_8px_24px_-14px_rgba(30,144,255,0.9)] hover:bg-sky-500 dark:bg-sky-500 dark:hover:bg-sky-400",
+    solid: "bg-indigo-600 text-white shadow-[0_8px_24px_-14px_rgba(30,144,255,0.9)] hover:bg-indigo-500 dark:bg-indigo-500 dark:hover:bg-indigo-400",
     ghost: "border border-transparent text-[var(--color-foreground-muted)] hover:bg-[var(--color-surface-hover)] hover:text-[var(--color-foreground)]",
     outline:
         "border border-[var(--color-border)] bg-[var(--color-surface-2)] text-[var(--color-foreground-muted)] hover:border-[var(--color-border-strong)] hover:bg-[var(--color-surface-hover)] hover:text-[var(--color-foreground)]",
@@ -31,7 +31,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         return (
             <button
                 ref={ref}
-                className={`inline-flex cursor-pointer items-center justify-center gap-2 rounded-xl font-medium transition-all duration-250 ease-out hover:-translate-y-px hover:scale-[1.01] active:translate-y-0 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500/45 disabled:pointer-events-none disabled:opacity-60 ${sizeClasses[size]} ${variantClasses[variant]} ${className}`}
+                className={`inline-flex cursor-pointer items-center justify-center gap-2 rounded-lg font-medium transition-all duration-250 ease-out hover:-translate-y-px hover:scale-[1.01] active:translate-y-0 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500/45 disabled:pointer-events-none disabled:opacity-60 ${sizeClasses[size]} ${variantClasses[variant]} ${className}`}
                 {...props}
             />
         );

@@ -48,7 +48,7 @@ const SlidedPanel = ({
                         onClick={onClose}
                         size="icon"
                         variant="ghost"
-                        className="rounded-xl"
+                        className="rounded-lg"
                         aria-label="Закрыть меню"
                     >
                         <Icon path={mdiClose} className="h-7 w-7" />
