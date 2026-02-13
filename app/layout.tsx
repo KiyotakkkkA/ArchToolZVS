@@ -4,32 +4,32 @@ import "./globals.css";
 import { AppShell } from "@/components/templates/AppShell";
 
 const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+    variable: "--font-geist-sans",
+    subsets: ["latin"],
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+    variable: "--font-geist-mono",
+    subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Arch Tools — C4 Workspace",
-  description: "Интерактивный редактор и превью C4 диаграмм на PlantUML",
+    title: "Arch Tools — C4 Workspace",
+    description: "Интерактивный редактор и превью C4 диаграмм на PlantUML",
 };
 
 export default function RootLayout({
-  children,
+    children,
 }: Readonly<{
-  children: React.ReactNode;
+    children: React.ReactNode;
 }>) {
-  return (
-    <html lang="ru" suppressHydrationWarning>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <AppShell>{children}</AppShell>
-      </body>
-    </html>
-  );
+    return (
+        <html lang="ru" suppressHydrationWarning>
+            <body
+                className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+            >
+                <AppShell>{children}</AppShell>
+            </body>
+        </html>
+    );
 }
